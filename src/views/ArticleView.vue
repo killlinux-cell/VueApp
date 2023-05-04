@@ -174,16 +174,30 @@
         </div>
     </div>
     <!-- fin content -->
+    <!-- Autres -->
+
+    <!-- Autres -->
+
+    <!-- PUB -->
+    <PubView />
+  <!-- PUB -->
+  
+  <!-- Footer -->
+  <FooterView />
+  <!-- Footer -->
 </template>
 
 <script>
 /* import GridView from './GridView.vue'; */
+import PubView from './PubView.vue';
+import FooterView from './FooterView.vue';
 
 export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: "ArticleView",
     components: {
-        /* GridView, */
+        PubView,
+        FooterView,
     },
     mounted() {
         window.addEventListener('scroll', this.updateProgressBar);
@@ -210,7 +224,7 @@ body{
 }
 .progress-bar {
     position: sticky;
-    z-index: 5;
+    z-index: 2;
     top: 0;
     background-color: #76f4b0;
     height: 5px;
